@@ -1,0 +1,237 @@
+/*   
+Theme Name: A Thematic Child Theme
+Theme URI: 
+Description: Use this theme to start your Thematic Child Theme development.
+Author: Ian Stewart
+Author URI: http://themeshaper.com/
+Template: thematic
+Version: 1.0
+Tags: Thematic
+.
+Thematic is © Ian Stewart http://themeshaper.com/
+.
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-r-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('../thematic/library/styles/default.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+/**********/
+/* HEADER */
+/**********/
+
+#header {
+    background: none repeat scroll 0 0 #333333;
+}
+
+#blog-title a {
+    color: #EEEEEE;
+}
+
+#header 
+{
+	background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0, rgb(33,33,33)),
+	    color-stop(1, rgb(17,17,17))
+		);
+	background-image: -moz-linear-gradient(
+	    center bottom,
+	    rgb(33,33,33) 0%,
+	    rgb(17,17,17) 100%
+	);
+	height: 100px;
+}
+
+#header  #headerWrapperAbt
+{
+	margin: 0 auto;
+    width: 960px;
+}
+
+#header #branding
+{
+    float: left;
+    padding: 20px 0 0;
+    width: 281px;
+}
+
+#header #access
+{
+    float: right;
+    padding: 65px 0 0;
+    width: 40%;
+    border: medium none;
+}
+
+#header #access .menu
+{
+	
+}
+
+#header #access .menu ul
+{
+    border: medium none;	
+}
+
+#header #access .menu ul li
+{
+	border: medium none;
+    background: none repeat scroll 0 0 transparent;
+}
+
+#header #access .menu ul li a
+{
+    border: medium none;
+    color: #AAAAAA;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 9px 23px 10px;
+}
+
+.sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+    background: none repeat scroll 0 0 transparent;
+	color: #EEEEEE !important;
+}
+
+.lineBelowHeaderAbt
+{
+    background: url("./img/header_line.png") repeat scroll 0 0 transparent;
+    clear: both;
+    height: 3px;
+}
+
+#blog-title
+{
+    background: url("./img/header_logo.png") no-repeat scroll 0 0 transparent;
+    height: 80px;
+    position: relative;
+    top: 3px;	
+}
+
+#blog-title a 
+{
+	color: transparent;
+}
+
+#blog-title span
+{
+     display:none;
+}
+
+#header #access .menu ul li a:hover {
+    background: url("./img/linkHoverBg.png") no-repeat scroll 50% 5px transparent;
+}
+
+/**************/
+/*****Main*****/
+/**************/
+
+body, input, textarea 
+{
+    color: #BBBBBB;
+}
+
+.mainWrapperAbt
+{
+    background: none repeat scroll 0 0 #111111;
+}
+
+
+/*Adjusting Portfolio Page for the Gallery*/
+
+.page-id-2 #main
+{
+     padding: 15px 0 0;
+}
+
+.page-id-2 #main #container
+{
+	width: 960px;
+}
+
+.page-id-2 #main #container #content
+{
+	width: 960px;
+}
+
+.page-id-2 #post-2 .entry-title
+{
+display: none;
+}
+
+.page-id-2 #post-2 div.entry-content ul
+{
+    list-style: none outside none;
+    text-align: center;
+}
+
+.page-id-2 #post-2 div.entry-content ul li
+{
+    display: inline;
+    margin-right: 10%;
+}
+
+
+/*my Links*/
+
+ul.myLinks
+{
+	
+}
+
+ul.myLinks li
+{	
+    color: #AAAAAA;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+ul.myLinks li:hover
+{	
+    color: #CCCCCC;
+}
+
+ul.myLinks li.focus
+{
+    color: #DDDDDD;	
+}
+
+
+#dfcg-imgprev
+{
+	background: url("./img/arrow.png") no-repeat scroll left center transparent !important;
+}
+
+#dfcg-imgnext 
+{
+	background: url("./img/arrow1.png") no-repeat scroll right center transparent !important;
+}
+
+#dfcg-imglink
+{
+    background: none repeat scroll 0 0 transparent !important;	
+}
+
+/* WP corrections */
+.navigation a:active, .navigation a:hover {
+    color: #CCCCCC;
+}
